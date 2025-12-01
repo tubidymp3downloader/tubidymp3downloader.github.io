@@ -77,29 +77,11 @@
       color: #0d6efd;
     }
   </style>
-    <style>
-  /* Fix header but keep container width */
-  .fixed-header-wrapper {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 1140px; /* same as Bootstrap container */
-    z-index: 9999;
-  }
-
-  /* Prevent content from hiding behind header */
-  body {
-    padding-top: 80px; /* adjust height according to header height */
-  }
-</style>
 </head>
 
  <!-- Navigation -->
-  <header class="fixed-header-wrapper">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
       <a class="navbar-brand" href="#">Tubidy – MP3 & MP4 Hub</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
@@ -112,9 +94,10 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-</header><!-- Main Container -->
+    </nav>
+  </header>
+  
+  <!-- Main Container -->
   <section class="container py-5">
 
     <h1 class="text-center">Tubidy – Fast MP3 & MP4 Download Tool</h1>
